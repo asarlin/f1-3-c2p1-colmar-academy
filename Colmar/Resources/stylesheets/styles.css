@@ -1,0 +1,491 @@
+/* Universal Styles */
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-size: 50px;
+
+  font-family: 'Playfair Display', serif;
+}
+
+h2{
+  font-size: 24px;
+  color: #092a46;
+}
+
+h3{
+  font-size: 40px;
+  font-family: 'Playfair Display', serif;
+}
+
+p{
+  color: #092a46;
+  line-height: 1.5;
+}
+
+a{
+  color: #1d4e77;
+  text-decoration: none;
+}
+
+a:hover{
+  color: black;
+}
+
+i{
+    color: #99a4b9;
+}
+
+.FeatureSection{
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Feature{
+  display: flex;
+  padding: 16px;
+  margin-bottom: 4px;
+  align-items: center;
+  background-color: #dfe2ea;
+  transition: background-color .5s ease;
+}
+
+.Feature:hover {
+  background-color: #F4F5F7;
+}
+
+.FeatureText{
+  padding-left: 16px;
+  padding-right: 8px;
+}
+
+.Feature .desktop{
+  width: 35%;
+}
+
+.Feature .mobile{
+  display: none;
+}
+
+.Feature p{
+  padding: 8px 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .FeatureSection{
+    padding-left: 0px;
+  }
+
+  .Feature{
+    display: flex;
+    flex-direction: column;
+    padding: 16px 0px;
+    align-items: flex-start;
+  }
+
+  .Feature .desktop{
+    display: none;
+  }
+
+  .Feature .mobile{
+    display: inline-block;
+    width: 100%;
+  }
+
+  .FeatureText{
+    padding-left: 16px;
+    padding-top: 16px;
+  }
+
+}
+
+/* Navigation */
+
+nav {
+
+}
+
+nav .navcontent{
+  display: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  background-color: white;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+nav #logo {
+  height: 32px;
+  margin-left: 24px;
+  display: flex;
+  align-items: center;
+}
+
+#colmar {
+  font-weight: bold;
+}
+
+#academy {
+  font-weight: lighter;
+}
+
+nav ul{
+  display: flex;
+  margin-right: 8px;
+}
+
+nav li{
+  padding-right: 16px;
+}
+
+.icons{
+  display: none;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 600px) {
+
+nav .navcontent{
+  display: none;
+}
+
+  .icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 64px;
+    background-color: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+  }
+
+}
+
+/* Section A */
+
+.Content {
+    top: 64px;
+    position: relative;
+}
+
+.SectionA {
+  background-color: #F4F5F7;
+  padding: 32px 24px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.SectionA img{
+  width: 60%;
+  background-image: url("/Users/brynne/Documents/projects/Colmar/Resources/images/banner.jpg");
+}
+
+.SectionA .Intro {
+  display: inline;
+  text-align: left;
+  padding-left: 48px;
+  width: 30%;
+}
+
+#CTAbutton {
+  margin-top: 40px;
+  padding: 16px 0;
+  background-color: #99a4b9;
+  text-align: center;
+  transition: background-color .5s ease;
+}
+
+#CTAbutton:hover{
+  background-color: #041c30;
+}
+
+.Intro h1 {
+  color: #041c30;
+}
+
+.Intro h2 {
+  margin-top: 30px;
+  color: #092a46;
+  line-height: 1.5;
+}
+
+#CTAbutton span{
+  color: white;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .SectionA {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .SectionA img{
+    width: 100%;
+  }
+
+  .SectionA .Intro {
+    width: auto;
+    text-align: left;
+    padding-left: 0px;
+    padding: 0 16px;
+  }
+
+  .Intro h1{
+    padding-top: 32px;
+    font-size: 42px;
+  }
+
+  #CTAbutton {
+    margin-bottom: 32px;
+  }
+
+}
+
+/* Section B */
+
+.SectionB {
+  background-color: #E6E8EE;
+  padding: 32px 24px;
+  display: flex;
+  position: relative;
+}
+
+.SectionB #Bleft {
+  width: 60%;
+}
+#Bleft img{
+  width: 100%;
+}
+
+#Bleft h2{
+  padding-top: 32px;
+  font-weight: bold;
+}
+
+#Bleft p{
+  padding: 24px 0;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+#Bleft span{
+  font-size: 14px;
+  color: #99a4b9;
+}
+
+.SectionB #Bright {
+  width: 40%;
+    margin-top: -16px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .SectionB #Bleft {
+    display: none;
+  }
+
+  .SectionB #Bright {
+    width: 100%;
+    margin-top: 0px;
+  }
+
+}
+
+/* Section C */
+
+.SectionC {
+
+  position:relative;
+  background-color: #F4F5F7;
+  width: 100%
+}
+
+.SectionC h3 {
+  margin: 0 auto;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.Courses {
+  display: flex;
+  margin: 0 40px;
+  flex-direction: column;
+}
+
+.Row {
+  display: flex;
+  justify-content: stretch;
+}
+
+.Course{
+  background-color: #e6e8ee;
+  display: flex;
+  flex-direction: column;
+  margin: 0 16px 32px 16px;
+  width: 33%;
+}
+
+.Courseimage {
+  height: auto;
+  width: 100%;
+}
+
+.Coursetext {
+  padding: 16px 16px 24px 16px;
+}
+
+.Courses p{
+  padding-top: 8px;
+  font-size: 14px;
+}
+
+.Courses p:first-of-type{
+  font-size: 12px;
+  color: gray;
+  padding-top: 12px;
+}
+
+.Courses h2{
+  padding-top: 8px;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+
+  .SectionC {
+    margin-top: 32px;
+    position:relative;
+    background-color: white;
+    width: 100%;
+    border-top: 1px solid lightgray;
+  }
+
+  .Row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Course{
+    background-color: #E6E8EE;
+    margin: 8px 0;
+    width: 100%;
+  }
+
+  .Courseimage {
+    display: none;
+  }
+
+  .Courses p{
+    display: none;
+  }
+
+  .Courses {
+    margin: 0 16px 32px 16px;
+    flex-direction: column;
+  }
+
+}
+
+/* Section D */
+
+.SectionD {
+  background-color: #E6E8EE;
+  padding: 32px 24px;
+}
+
+.Dtitle{
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 32px;
+}
+
+.Dcontent {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+}
+
+.SectionD #Dleft {
+  width: 60%;
+}
+
+#Dleft img{
+  width: 100%;
+}
+
+#Dleft h2{
+  padding-top: 32px;
+  font-weight: bold;
+}
+
+#Dleft p{
+  padding-top: 24px;
+}
+
+.SectionD #Dright {
+  width: 40%;
+    margin-top: -16px;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .SectionD {
+    border-top: 1px solid lightgray;
+    padding: 32px 0px;
+  }
+
+  .SectionD #Dright {
+    display: none;
+  }
+
+  .SectionD #Dleft {
+    width: 100%;
+  }
+
+  #Dleft #lefttext{
+    display: none;
+  }
+
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-top: 1px solid lightgray;
+}
+
+footer span{
+  font-size: 14px;
+  color: gray;
+}
+
+
+footer li {
+  display: inline;
+  padding-left: 16px;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 600px) {
+
+  footer li {
+    display: none;
+  }
+
+}
